@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Open', sans-serif;
+}
+ p {
+     text-align: center;
+     font-size: 28px;
+ }
+
+
+header {
+    display: flex;
+    margin: 0 50px;
+    align-items: space-around;
+    background-image: url(/images/top-kayaking-destinations-scaled.jpeg);
+}
+
+header, ul {
+    display: flex;
+    list-style: none;
+    font-family: 'Open', sans-serif;
+    align-items: center;
+    justify-content: space-around;
+    margin: 25px;
+    font-size: 28px;
+    
+}
+
+.heroGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'heroGridimage heroBlurb';
+  
+    
+    background-image: linear-gradient(to bottom right, darkcyan, white);
+    
+    
+
+}
+
+.heroGridimage {
+    
+    grid-area: 'heroGridimage';
+    align-items: center;
+    justify-content: center;
+    
+    padding: 25px;
+}
+
+.heroBlurb {
+    display: flex;
+    grid-area: 'heroBlurb';
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 50%;
+   
+}
